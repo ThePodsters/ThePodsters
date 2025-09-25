@@ -12,3 +12,9 @@ git commit
     when your done, press esc, then type in :wq
 git push
 
+
+
+Note:
+remember to check this 
+    git config --global user.email "the email goes here"
+    git config --global user.name "your github user goes here"
