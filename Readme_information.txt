@@ -6,7 +6,6 @@ Nom de groupe : The Podsters
 Noms des équipiers :
     Félix Séguin (300477848)
     Ethan Liu (300482123)
-    Rushi Patel (300465143)
 
 Product name (So far): The Pod
 
