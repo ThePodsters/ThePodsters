@@ -13,7 +13,3 @@ Product name (So far): The Pod
 
 Product description : A human size cube to step in that reveals every physical flaw
 with the body and gives solutions to fix such flaw. 
-
-
-we are testing iuwnunivuw 
-
