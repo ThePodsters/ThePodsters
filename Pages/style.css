@@ -1,0 +1,34 @@
+nav{
+    text-align: right;
+    font-size: medium;
+    height: 100px;
+    width: 100%;
+    background-color: lightblue;
+}
+.nav{
+    border: solid black 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow:3px 3px 15px 0px #000000;
+    background-color: lightgreen;
+    display: inline-block;
+    margin: 30px;
+    font-size: 20px;
+}
+article{
+    height: 600px;
+    width: 100%;
+    background-color: lightcoral;
+}
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: lightsalmon;
+}
+a.hover{
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+}
