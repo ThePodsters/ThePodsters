@@ -1,32 +1,40 @@
 nav{
     text-align: right;
     font-size: medium;
-    height: 100px;
+    height: 10vh;
     width: 100%;
-    background-color: lightblue;
+    background-color: #54A056;
 }
 .nav{
     border: solid black 2px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow:3px 3px 15px 0px #000000;
+    border-radius: 20px;
     background-color: lightgreen;
     display: inline-block;
     margin: 30px;
     font-size: 20px;
 }
 article{
-    height: 600px;
+    height: 90vh;
     width: 100%;
-    background-color: lightcoral;
+    margin-top: -50px;
+    background-color: #38CA42;
+}
+.statment{
+    text-align: center;
+    font-size: large; 
+}
+.wl{
+    text-align: center;
+    font-size: 50px;
+    padding-top: 50px;    
 }
 footer{
-    height: 70px;
+    height: 10vh;
     width: 100%;
-    background-color: lightsalmon;
-}
-a.hover{
-    
+    background-color: #54A056;
 }
 a{
     text-decoration: none;
