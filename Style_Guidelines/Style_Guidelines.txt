@@ -1,5 +1,5 @@
 #48643D Is a darker shade, will be used for
-    borders and background designe.
+    borders and background design.
 
 #618652 Is still a darker shade but not as dark as #48643D, this will
     also be used for borders to have diffrent colored borders, so it doesn't look bland
