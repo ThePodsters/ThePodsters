@@ -1,0 +1,24 @@
+/* This is the css file for the pricing page*/
+.container{
+            display: grid;
+            grid-template-columns: 33% 33% 33%;
+            grid-template-rows: 10vh 65vh 10vh;
+            padding: 20px;
+            justify-content: center;
+            text-align: center;
+        }
+        .container div{
+            justify-items: center;
+            background-color: aqua;
+            border-style: solid;
+            border-width: 5px;
+            border-radius: 30px;
+            border-color: black;
+            margin: 20px;
+            padding: 20px;
+            align-items: center;
+            font-size: 15px;
+        }
+        h2.centerText{
+            margin: -10px;
+        }
