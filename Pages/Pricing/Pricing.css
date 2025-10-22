@@ -1,24 +1,69 @@
 /* This is the css file for the pricing page*/
+nav{
+    text-align: right;
+    font-size: medium;
+    height: 10vh;
+    width: 100%;
+    background-color: #54A056;
+}
+.nav{
+    border: solid black 2px;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-shadow:3px 3px 15px 0px #000000;
+    border-radius: 20px;
+    background-color: lightgreen;
+    display: inline-block;
+    margin: 30px;
+    font-size: 20px;
+}
+/*
+    above is for nav bar
+    bellow is for this page
+*/
 .container{
-            display: grid;
-            grid-template-columns: 33% 33% 33%;
-            grid-template-rows: 10vh 65vh 10vh;
-            padding: 20px;
-            justify-content: center;
-            text-align: center;
-        }
-        .container div{
-            justify-items: center;
-            background-color: aqua;
-            border-style: solid;
-            border-width: 5px;
-            border-radius: 30px;
-            border-color: black;
-            margin: 20px;
-            padding: 20px;
-            align-items: center;
-            font-size: 15px;
-        }
-        h2.centerText{
-            margin: -10px;
-        }
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 10vh 65vh 1vh;
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.container div{
+    justify-items: center;
+    background-color: #AAEC90;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: black;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+div.title{
+    margin-inline-start: 2px;
+    margin-inline-end: 2px;
+}
+h2.centerText{
+    margin: -10px;
+}
+h3.centerText{
+    margin: -10px;
+}
+button.priceB{
+    justify-items: center;
+    background-color: #AAEC90;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 30px;
+    border-color: black;
+    margin: 10px;
+    padding: 20px;
+    align-items: center;
+    font-size: 15px;
+}
+button:hover{
+    background-color: #B1F496;
+    color: white;
+}
