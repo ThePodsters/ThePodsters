@@ -1,1 +1,20 @@
+#48643D Is a darker shade, will be used for
+    borders and background designe.
+
+#618652 Is still a darker shade but not as dark as #48643D, this will
+    also be used for borders to have diffrent colored borders, so it doesn't look bland
+
+#79A867 Is a in the middle of our darkes and lightes colors. This 
+    color will be used to draw the users eye to things that are a little important, unlike the dark borders colors.
+
+#B1F496 This is one of our lightess colors, this is to demostrate improtant things.
+
+#92CA7B Is used for the same thing as #B1F496
+
+#AAEC90 Is used for the same thing as #B1F496
+
+We used a green color complex, to demonstrate a healthy look (like nature) 
+
+We plan to have round corners to diplay calmness. 
+
 
