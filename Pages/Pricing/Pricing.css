@@ -2,23 +2,31 @@ body{
     padding: 0;
     margin: 0;
 }
+.headerTitle{
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    font-size: 30px;
+    width: 150px;
+}
 /* This is the css file for the pricing page*/
 nav{
-    text-align: right;
+    text-align: left;
     font-size: medium;
     height: 10vh;
     width: 100%;
-    border-bottom: solid #48643D 4px;
+    background-color: #54A056;
 }
 .nav{
-    border: solid #48643D 2px;
+    border: solid black 2px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow:3px 3px 15px 0px #000000;
     border-radius: 20px;
+    background-color: lightgreen;
     display: inline-block;
-    background-color: #B1F496;
-    margin: 30px;
+    margin: 20px;
     font-size: 20px;
 }
 a{
@@ -36,11 +44,11 @@ a{
     padding: 20px;
     justify-content: center;
     text-align: center;
-    background-image: url("Photos/Health2.jpg")
+    background-image: url("Photos/Health2.jpg");
 }
 .container div{
     justify-items: center;
-    background-color: #AAEC90;
+    background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 28%);
     border-style: solid;
     border-width: 3px;
     border-radius: 30px;
@@ -62,7 +70,7 @@ h3.centerText{
 }
 button.priceB{
     justify-items: center;
-    background-color: #AAEC90;
+    background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 28%);
     border-style: solid;
     border-width: 3px;
     border-radius: 30px;
