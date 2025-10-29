@@ -12,10 +12,11 @@ body{
 }
 /* This is the css file for the pricing page*/
 nav{
+    border: solid #000000;
     text-align: left;
     font-size: medium;
     height: 10vh;
-    width: 100%;
+    width: 99.6%;
     background-color: #54A056;
 }
 .nav{
