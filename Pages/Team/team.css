@@ -1,1 +1,25 @@
 /* This is the css file for team*/
+body{
+    background: #22c772;
+    background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 28%, rgba(255, 255, 255, 1) 100%);
+}
+
+
+#bird1{
+   
+    position: relative;
+    height: 20vh;
+    bottom: 60vh;
+    left: 185vb;
+}
+
+h1{
+    position: relative;
+    bottom: 670px;
+
+}
+
+nav{
+    position: relative;
+    right: 185vh;
+}
