@@ -1,21 +1,29 @@
+body{
+    padding: 0;
+    margin: 0;
+}
 /* This is the css file for the pricing page*/
 nav{
     text-align: right;
     font-size: medium;
     height: 10vh;
     width: 100%;
-    background-color: #54A056;
+    border-bottom: solid #48643D 4px;
 }
 .nav{
-    border: solid black 2px;
+    border: solid #48643D 2px;
     padding-left: 15px;
     padding-right: 15px;
     box-shadow:3px 3px 15px 0px #000000;
     border-radius: 20px;
-    background-color: lightgreen;
     display: inline-block;
+    background-color: #B1F496;
     margin: 30px;
     font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 /*
     above is for nav bar
@@ -28,6 +36,7 @@ nav{
     padding: 20px;
     justify-content: center;
     text-align: center;
+    background-image: url("Photos/Health2.jpg")
 }
 .container div{
     justify-items: center;
