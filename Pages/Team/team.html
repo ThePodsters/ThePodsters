@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team</title>
     <link rel="stylesheet" href="team.css">
+    <script src="team.js"></script>
 </head>
 <body>
     <nav>
@@ -12,25 +13,179 @@
         <div class="nav"><a href="/Pages/Pricing/Pricing.html">Pricing</a></div>
         <div class="nav"><a href="/Pages/Product_Features/Product_Features.html">Features</a></div>
         <div class="nav"><a href="/Pages/Team/team.html">Team</a></div>
-    <nav>
+    </nav>
     
-    <div class="names">
-        <h2 id="felix">member 1</h2>
-        <h2 id="eliotte">member 2</h2>
-        <h2 id="Ethan">member 3</h2>
-        <h2 id="Rushi">member 4</h2>
-        <h2 id="Sohaan">member 5</h2>
-    </div>
+    <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">HP</div>
+        <div>
+          <h1>Meet The Podsters</h1>
+          <p class="lead">
+            Five University of Ottawa Software Engineering students building human-centered health tech (like the Health Pod).
+          </p>
+        </div>
+      </div>
+      <div class="controls">
+        <input
+          class="search"
+          placeholder="Search team (name or role)"
+          id="searchInput"
+          aria-label="Search team"
+        />
+      </div>
+    </header>
 
-    <div class="descriptions">
-        <p id="felix">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi atque recusandae ad, sapiente quo ullam molestiae excepturi debitis rerum. Nesciunt repudiandae, excepturi eos porro ipsum amet ab illo non!</p>
-        <p id="eliotte">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi atque recusandae ad, sapiente quo ullam molestiae excepturi debitis rerum. Nesciunt repudiandae, excepturi eos porro ipsum amet ab illo non!</p>
-        <p id="Ethan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi atque recusandae ad, sapiente quo ullam molestiae excepturi debitis rerum. Nesciunt repudiandae, excepturi eos porro ipsum amet ab illo non!</p>
-        <p id="Rushi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi atque recusandae ad, sapiente quo ullam molestiae excepturi debitis rerum. Nesciunt repudiandae, excepturi eos porro ipsum amet ab illo non!</p>
-        <p id="Sohaan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam commodi atque recusandae ad, sapiente quo ullam molestiae excepturi debitis rerum. Nesciunt repudiandae, excepturi eos porro ipsum amet ab illo non!</p>
-    </div>
+    <main>
+      <section class="grid" id="teamGrid">
+        <article class="card" data-name="Félix Séguin" data-role="Clinical Lead">
+          <div class="accent-arc"></div>
+          <div class="row">
+            <div class="avatar">
+              <img
+                src="https://via.placeholder.com/86x86.png?text=F"
+                alt="Félix Séguin"
+                style="width:100%;height:100%;object-fit:cover"
+              />
+            </div>
+            <div style="flex:1">
+              <h3 class="name">Félix Séguin</h3>
+              <div class="role">Clinical Lead</div>
+            </div>
+          </div>
+          <p class="bio">
+            Tech guy.
+          </p>
+          <div class="meta">
+            <div class="pill">10+ yrs experience</div>
+            <div class="pill">MD</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openModal(event,this)">View profile</button>
+            <button class="btn primary" onclick="contact('felix@schoolemail.com')">Contact</button>
+          </div>
+        </article>
+        <article class="card" data-name="Elliot Okorie" data-role="Product Manager">
+          <div class="accent-arc"></div>
+          <div class="row">
+            <div class="avatar">
+              <img
+                src="Github Shit/image0.jpeg"
+                alt="Elliot Okorie"
+                style="width:100%;height:100%;object-fit:cover"
+              />
+            </div>
+            <div style="flex:1">
+              <h3 class="name">Elliot Okorie</h3>
+              <div class="role">Product Manager</div>
+            </div>
+          </div>
+          <p class="bio">
+            Leads product strategy and roadmap, balancing technical constraints with delightful user experiences.
+          </p>
+          <div class="meta">
+            <div class="pill">Design-led</div>
+            <div class="pill">Agile</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openModal(event,this)">View profile</button>
+            <button class="btn primary" onclick="contact('elliot@schoolemail.com')">Contact</button>
+          </div>
+        </article>
+        <article class="card" data-name="Ethan Liu" data-role="Lead Engineer">
+          <div class="accent-arc"></div>
+          <div class="row">
+            <div class="avatar">
+              <img
+                src="https://via.placeholder.com/86x86.png?text=E"
+                alt="Ethan Liu"
+                style="width:100%;height:100%;object-fit:cover"
+              />
+            </div>
+            <div style="flex:1">
+              <h3 class="name">Ethan Liu</h3>
+              <div class="role">Lead Engineer</div>
+            </div>
+          </div>
+          <p class="bio">
+            Systems architect-
+          </p>
+          <div class="meta">
+            <div class="pill">PhD</div>
+            <div class="pill">ML & Systems</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openModal(event,this)">View profile</button>
+            <button class="btn primary" onclick="contact('ethan@schoolemail.com')">Contact</button>
+          </div>
+        </article>
+        <article class="card" data-name="Rushi Patel" data-role="UX Designer">
+          <div class="accent-arc"></div>
+          <div class="row">
+            <div class="avatar">
+              <img
+                src="https://via.placeholder.com/86x86.png?text=R"
+                alt="Rushi Patel"
+                style="width:100%;height:100%;object-fit:cover"
+              />
+            </div>
+            <div style="flex:1">
+              <h3 class="name">Rushi Patel</h3>
+              <div class="role">UX Designer</div>
+            </div>
+          </div>
+          <p class="bio">
+            Designer.
+          </p>
+          <div class="meta">
+            <div class="pill">Research-led</div>
+            <div class="pill">Figma</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openModal(event,this)">View profile</button>
+            <button class="btn primary" onclick="contact('rushi@schoolemail.com')">Contact</button>
+          </div>
+        </article>
+        <article class="card" data-name="Sohaan Mahadea" data-role="Data Scientist">
+          <div class="accent-arc"></div>
+          <div class="row">
+            <div class="avatar">
+              <img
+                src="https://via.placeholder.com/86x86.png?text=S"
+                alt="Sohaan Mahadea"
+                style="width:100%;height:100%;object-fit:cover"
+              />
+            </div>
+            <div style="flex:1">
+              <h3 class="name">Sohaan Mahadea</h3>
+              <div class="role">Data Scientist</div>
+            </div>
+          </div>
+          <p class="bio">
+            Tech guy 2.
+          </p>
+          <div class="meta">
+            <div class="pill">ML Ops</div>
+            <div class="pill">Statistics</div>
+          </div>
+          <div class="actions">
+            <button class="btn" onclick="openModal(event,this)">View profile</button>
+            <button class="btn primary" onclick="contact('sohaan@schoolemail.com')">Contact</button>
+          </div>
+        </article>
+      </section>
+    </main>
 
-    <img class="bird" id="bird1" src="bird_2.jpg" alt="colorful bird">
-    <h1>Pod</h1>
+    <footer>
+      © <span id="year"></span> The Podsters — Built by first-year students.
+    </footer>
+  </div>
+  <img class="bird" id="bird1" src="bird_2.jpg" alt="colorful bird" />
+  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
+    <div class="modal" role="document">
+      <div class="close" onclick="closeModal()">✕</div>
+      <div id="modalContent"></div>
+    </div>
+  </div>
 </body>
 </html>
