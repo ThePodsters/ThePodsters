@@ -1,4 +1,87 @@
 /* This is the css file for the Producte Features*/
 body {
-    background-color: #618652;
+    background-color: #22c772;
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+.navbar{
+    background-color:#4e7343;
+    text-align: center;
+    border-bottom: solid #000000 3px;
+    padding: 15px;
+}
+
+.nav-btn {
+border: solid #1e3c1a 2px;
+    padding: 10px 20px;
+    margin: 0 15px;
+    background-color: #9ae59c;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px #000000;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav-btn:hover {
+    background-color: #72c475;
+}
+
+.intro {
+    text-align: center;
+    margin-top: 40px;
+    background-color: #48b76a;
+    border-radius: 25px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    box-shadow: 2px 2px 10px black;
+}
+
+.intro h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Features section layout */
+.Features {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: #58c57e;
+    border: solid #000000 2px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 10px black;
+    text-align: center;
+    width: 25%;
+    min-width: 250px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+}
+
+.feature-card h2 {
+    background-color: #5dd67e;
+    border-radius: 20px;
+    border: solid #000000 1px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.feature-card p {
+    margin-top: 15px;
+    font-size: 16px;
+    line-height: 1.5;
 }
