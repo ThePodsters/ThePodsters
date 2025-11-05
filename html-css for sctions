@@ -1,0 +1,47 @@
+<div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">Battleship Game</h3>
+                    </div>
+                    <p class="project-description">
+                        Console-based replica of the classic Battleship game featuring player vs computer gameplay. 
+                        Players manually input ship placements and attack coordinates through command-line interface.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tag">Console App</span>
+                        <span class="tag">Game Logic</span>
+                        <span class="tag">AI Strategy</span>
+                        <span class="tag">Algorithms</span>
+                        <span class="tag">Computer Opponent</span>
+                    </div>
+                </div>
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 0.75rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+.external-link {
+    color: var(--muted-foreground);
+    flex-shrink: 0;
+}
+
+.project-description {
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
