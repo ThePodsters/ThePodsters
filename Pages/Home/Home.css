@@ -1,6 +1,11 @@
 body{
     background: #22c772;
     background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 28%, rgba(255, 255, 255, 1) 100%);
+
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 120px;
+
 }
 .header{
     border-bottom: solid #48643D 4px;
@@ -40,15 +45,15 @@ article{
     margin-top: -50px;
 }
 aside{
-    height: 100vh;
-    width: 100%;
+ 
     display: flex;
     justify-content: center;
 }
+
 section{
-    margin-top: 100px;
-    height: 70vh;
-    width: 100vh;
+    margin-top: 40px;
+    max-width: 900px;
+    width: 90%;
     border: 2px solid darkgreen;
     border-radius: 40px;
 }
@@ -69,3 +74,75 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.healthpod-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: rgb(0, 0, 0);           
+  margin-bottom: 20px;
+  
+}
+
+.section-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0px auto 30px;
+  color: #000000;        
+}
+
+/* --- Tag container --- */
+.multiple_tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+.tag {
+  padding: 8px 16px;
+  border: 2px solid #000000;    
+  border-radius: 25px;          
+  color: rgb(0, 0, 0);
+  background-color: transparent; 
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.tag:hover {
+  background-color: #a8f5b3;    
+  color: #103410;              
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+article, aside, section {
+  height: auto !important;
+  width: auto;            
+  overflow: visible !important;
+}
+
+
+
+.img {
+  max-width: 90vw;
+  width: 800px;
+  height: auto;
+}
+
+
