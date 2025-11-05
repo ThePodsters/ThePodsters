@@ -29,6 +29,11 @@ nav{
     display: inline-block;
     margin: 20px;
     font-size: 20px;
+    transition: transform 0.2s ease;
+}
+.nav:hover{
+    background-color: #B1F496;
+    transform: scale(1.05);
 }
 a{
     text-decoration: none;
@@ -58,6 +63,7 @@ a{
     padding: 20px;
     align-items: center;
     font-size: 15px;
+    box-shadow: 2px 2px 8px black;
 }
 div.title{
     margin-inline-start: 2px;
@@ -78,10 +84,13 @@ button.priceButton{
     border-color: black;
     margin: 10px;
     padding: 20px;
+    box-shadow: 2px 2px 8px black;
     align-items: center;
     font-size: 15px;
+    transition: transform 0.2s ease;
 }
 button:hover{
     background-color: #B1F496;
     color: white;
+    transform: scale(1.05);
 }
