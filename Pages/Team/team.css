@@ -15,15 +15,21 @@ body{
     bottom: 60vh;
     left: 185vb;
 }
-
-h1{
-    position: relative;
-    bottom: 670px;
-
+header {
+  text-align: center;
+  margin: 2rem auto;
+  max-width: 800px;
 }
-.header{
-    border-bottom: solid #48643D 4px;
-    padding: 20px;
+
+header h1 {
+  font-size: 2.5rem;
+  color: #04663a;
+  margin-bottom: 0.5rem;
+}
+
+header .lead {
+  font-size: 1rem;
+  color: #333;
 }
 .title{
     text-align: center;
@@ -60,4 +66,46 @@ h1{
   padding: 2rem;
   max-width: 1000px;
   margin: auto;
+}
+.card {
+  background: rgb(162, 234, 148);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: transform 0.2s ease;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.avatar img {
+  border-radius: 50%;
+  border: 3px solid #22c772;
+}
+.role {
+  color: #0a9a5b;
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #04663a;
+  color: rgb(0, 0, 0);
+  margin-top: auto;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#bird1 {
+  position: fixed;
+  height: 12vh;
+  bottom: 5vh;
+  right: 5vw;
+  opacity: 0.8;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
 }

@@ -6,7 +6,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
     }
 
     function openModal(e, btn){
-      // allow ESC to close
       document.addEventListener('keydown', escHandler);
     }
     function closeModal(){
@@ -16,7 +15,6 @@ document.getElementById('year').textContent = new Date().getFullYear();
     }
     function escHandler(e){ if(e.key === 'Escape') closeModal(); }
 
-    // small search filter
     const input = document.getElementById('searchInput');
     input.addEventListener('input', ()=>{
       const q = input.value.trim().toLowerCase();
