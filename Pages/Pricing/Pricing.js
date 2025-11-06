@@ -1,5 +1,23 @@
 /* This is the javascript file for pricing */
 
+function showAlert(message) {
+  return new Promise(resolve => {
+    const alertBox = document.getElementById("custom-alert");
+    const alertMessage = document.getElementById("alert-message");
+    const alertOk = document.getElementById("alert-ok");
+
+    alertMessage.textContent = message;
+    alertBox.style.display = "flex";
+
+    const closeAlert = () => {
+      alertBox.style.display = "none";
+      alertOk.removeEventListener("click", closeAlert);
+      resolve();
+    };
+
+    alertOk.addEventListener("click", closeAlert);
+  });
+}
 
 // Select all buttons with the "buy-btn" class
 const buyButtons = document.querySelectorAll("button.priceButton");
@@ -32,15 +50,16 @@ confirmBtn.addEventListener("click", () => {
   const address = document.getElementById("address").value;
 
   if (name.trim() === "" || address.trim() === ""){
-    alert("Please fill out all details!");
+    showAlert("Please fill out all details!");
     return;
   }
   //check for "valid" adress
   if (!address.includes("@")){
-    alert("Please enter a valid address!");
+    showAlert("Please enter a valid address!");
     return;
   }
 
   modal.style.display = "none";
-  alert(`Thank you, ${name}! Your Purchase Ticket of ${selectedItem} for ${selectedPrice} has been confirmed.`);
+  showAlert(`Thank you, ${name}! Your Purchase Ticket of ${selectedItem} for ${selectedPrice} has been confirmed.`);
 });
+
