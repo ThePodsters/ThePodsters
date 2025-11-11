@@ -75,6 +75,21 @@ a{
 }
 li{
     text-align: left;
+    font-size: 24px;
+}
+.under{
+    transform: translateY(40px);
+    height: 3px;
+    width: 100%;
+    background-color: black;
+}
+.dis{
+    max-height: 50px;
+    font-size: large;
+}
+.beni{
+    text-decoration: underline;
+    font-size: x-large;
 }
 .priceButton{
     justify-items: center;
