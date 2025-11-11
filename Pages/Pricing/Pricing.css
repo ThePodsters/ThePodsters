@@ -66,17 +66,17 @@ a{
     font-size: 15px;
     box-shadow: 2px 2px 8px black;
 }
-div.title{
+.title{
     margin-inline-start: 2px;
     margin-inline-end: 2px;
 }
-h2.centerText{
+.centerText{
     margin: -10px;
 }
-h3.centerText{
-    margin: -10px;
+li{
+    text-align: left;
 }
-button.priceButton{
+.priceButton{
     justify-items: center;
     background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 28%);
     border-style: solid;
@@ -98,7 +98,7 @@ button:hover{
 
 /* Purchase button/screen */
 /* Dim background overlay */
-.modal {
+.modal{
     display: none; /* hidden by default */
     position: fixed;
     z-index: 1000;
