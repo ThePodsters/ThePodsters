@@ -84,12 +84,12 @@ li{
     background-color: black;
 }
 .dis{
-    max-height: 50px;
-    font-size: large;
+    max-height: 10px;
+    font-size: 10vh;
 }
 .beni{
     text-decoration: underline;
-    font-size: x-large;
+    font-size: X-large;
 }
 .priceButton{
     justify-items: center;
