@@ -1,35 +1,34 @@
 body{
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 .headerTitle{
     text-align: center;
     display: inline-block;
     vertical-align: middle;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 2rem;
     width: 150px;
 }
 /* above is the header and body */
 /* This is the css file for the pricing page*/
 nav{
     border: solid #000000;
-    text-align: left;
-    font-size: medium;
+    align-items: center;
     height: 10vh;
     width: 99.6%;
     background-color: #54A056;
 }
 .nav{
     border: solid black 2px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0.0rem 0.3rem;
     box-shadow:3px 3px 15px 0px #000000;
     border-radius: 20px;
     background-color: lightgreen;
     display: inline-block;
-    margin: 20px;
-    font-size: 20px;
+    margin: 0.3rem;
+    font-size: 1.1rem;
     transition: transform 0.2s ease;
 }
 .nav:hover{
@@ -63,7 +62,7 @@ a{
     margin: 20px;
     padding: 20px;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
     box-shadow: 2px 2px 8px black;
 }
 .title{
@@ -77,19 +76,15 @@ li{
     text-align: left;
     font-size: 2.5vh;
 }
-.under{
-    transform: translateY(50px);
-    height: 3px;
-    width: 100%;
-    background-color: black;
-}
 .dis{
-    max-height: 10px;
-    font-size: 10vh;
+    max-height: 1.5px;
+    margin: -1vh;
+    font-size: 1.2rem;
+    line-height: 1.4;
 }
 .beni{
     text-decoration: underline;
-    font-size: X-large;
+    font-size: 1.3rem;
 }
 .priceButton{
     justify-items: center;
@@ -102,7 +97,7 @@ li{
     padding: 20px;
     box-shadow: 2px 2px 8px black;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
     transition: transform 0.2s ease;
 }
 button:hover{
@@ -127,11 +122,11 @@ button:hover{
 
 /* The white popup box */
 .modal-content {
-    display: none;
     background: #B1F496;
     padding: 20px 25px;
     border-radius: 10px;
-    width: 320px;
+    width: 30%;
+    max-width: 400px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
@@ -194,4 +189,27 @@ button:hover{
 
 .alert-box button:hover {
   background: #0056b3;
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+  .headerTitle {
+    font-size: 1.5rem;
+  }
+  nav {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+  .nav {
+    margin: 0.5rem 0;
+  }
+  .container div {
+    font-size: 0.9rem;
+    padding: 15px;
+  }
+  .priceButton {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
