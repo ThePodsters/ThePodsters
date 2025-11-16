@@ -54,19 +54,22 @@ header .lead {
       border-radius: 70px;
 }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
   padding: 2rem;
-  max-width: 1000px;
-  margin: auto;
+  overflow-x: auto;
+  white-space: nowrap;
+  justify-content: center;
 }
 section{
-    margin-top: 40px;
-    max-width: 900px;
-    width: 90%;
-    border: 2px solid darkgreen;
-    border-radius: 40px;
+  margin-top: 40px;
+  width: 95%;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 2px solid darkgreen;
+  border-radius: 40px;
 }
 .section-title {
   font-size: 2.5rem;
@@ -76,10 +79,12 @@ section{
   
 }
 .card {
+  width: 260px;
+  flex: 0 0 auto;
   background: rgb(162, 234, 148);
   border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease;
 }
 .card:hover {
