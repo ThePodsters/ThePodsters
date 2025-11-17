@@ -139,12 +139,17 @@ footer {
   text-align: center;
   padding: 1.2rem;
   margin-top: 3rem;
-  background: #0a7a40;
+  background: #318c5d;
   color: rgb(0, 0, 0);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 .bird {
   position: fixed;
-  bottom: 3vh;
+  bottom: 0;
   right: 3vw;
   width: 180px;
   pointer-events: none;

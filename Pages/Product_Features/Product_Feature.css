@@ -1,9 +1,10 @@
 body {
     background-color: #22c772;
     font-family: 'Times New Roman', serif;
-    margin: 0;
-    padding: 0;
-    color: black;
+   background: #22c772;
+    background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 25%, rgba(87, 199, 133, 1) 60%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+    min-height: 100vh;
 }
 
 .header {
@@ -13,7 +14,39 @@ body {
     padding: 25px 40px;
     border-bottom: 3px solid black;
 }
-
+.titleHeader {
+  text-align: center;
+  font-size: 50px;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.headerNav{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  background-color: #B1F496;
+  border-bottom: 3px solid #48643D;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+.navHeader {
+  border: solid #48643D 2px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: #B1F496;
+  box-shadow: 3px 3px 15px 0px #000000;
+  font-size: 20px;
+  transition: 0.25s ease;
+}
+.navHeader:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+.navHeader a {
+  text-decoration: none;
+  color: black;
+}
 .title {
     font-size: 60px;
     font-weight: bold;
@@ -97,4 +130,16 @@ body {
     margin-top: 15px;
     font-size: 16px;
     line-height: 1.5;
+}
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+  background: #318c5d;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }

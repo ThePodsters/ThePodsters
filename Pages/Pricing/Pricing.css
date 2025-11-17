@@ -1,7 +1,11 @@
 body{
-    padding: 0;
+     background: #22c772;
+    background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 35%, rgba(87, 199, 133, 1) 60%, rgba(255, 255, 255, 1) 100%);
+    position: relative;
+    min-height: 90vh;
+    padding:0;
     margin: 0;
-    font-family: sans-serif;
+    padding-bottom: 120px;
 }
 .headerTitle{
     text-align: center;
@@ -11,34 +15,42 @@ body{
     font-size: 2rem;
     width: 150px;
 }
+.titleHeader {
+  text-align: center;
+  font-size: 50px;
+  border-radius: 20px;
+  padding: 5px 15px;
+}
+.headerNav{
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 15px 0;
+  background-color: #B1F496;
+  border-bottom: 3px solid #48643D;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.2);
+}
+.navHeader {
+  border: solid #48643D 2px;
+  padding: 8px 18px;
+  border-radius: 20px;
+  background-color: #B1F496;
+  box-shadow: 3px 3px 15px 0px #000000;
+  font-size: 20px;
+  transition: 0.25s ease;
+}
+.navHeader:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+}
+.navHeader a {
+  text-decoration: none;
+  color: black;
+}
 /* above is the header and body */
 /* This is the css file for the pricing page*/
-nav{
-    border: solid #000000;
-    align-items: center;
-    height: 10vh;
-    width: 99.6%;
-    background-color: #54A056;
-}
-.nav{
-    border: solid black 2px;
-    padding: 0.0rem 0.3rem;
-    box-shadow:3px 3px 15px 0px #000000;
-    border-radius: 20px;
-    background-color: lightgreen;
-    display: inline-block;
-    margin: 0.3rem;
-    font-size: 1.1rem;
-    transition: transform 0.2s ease;
-}
-.nav:hover{
-    background-color: #B1F496;
-    transform: scale(1.05);
-}
-a{
-    text-decoration: none;
-    color: black;
-}
+
 /*
     above is for nav bar
     bellow is for this page
@@ -50,7 +62,6 @@ a{
     padding: 20px;
     justify-content: center;
     text-align: center;
-    background-image: url("Photos/Health2.jpg");
 }
 .container div{
     justify-items: center;
@@ -166,6 +177,18 @@ button:hover{
   align-items: center;
   justify-content: center;
   z-index: 9999;
+}
+footer {
+  text-align: center;
+  padding: 1.2rem;
+  margin-top: 3rem;
+  background: #318c5d;
+  color: rgb(0, 0, 0);
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
 }
 
 .alert-box {
