@@ -3,162 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team</title>
+    <title>The Podsters — Team</title>
     <link rel="stylesheet" href="team.css">
-    <script src="team.js"></script>
+    <script defer src="team.js"></script>
 </head>
+
 <body>
     <nav>
-        <div class="title">The Podsters</div>
-        <div class="nav"><a href="/Pages/Home/Home.html">Home</a></div>
-        <div class="nav"><a href="/Pages/Pricing/Pricing.html">Pricing</a></div>
-        <div class="nav"><a href="/Pages/Product_Features/Product_Features.html">Features</a></div>
-        <div class="nav"><a href="/Pages/Team/team.html">Team</a></div>
-    </nav>
-    <div class="container">
-    <header>
-      <div class="brand">
-        <div class="logo">The Podsters</div>
-        <div>
-          <h1>Meet The Podsters</h1>
-          <p class="lead">
-            Five University of Ottawa Software Engineering students building human-centered health tech (like the Health Pod).
-          </p>
-        </div>
-      </div>
-      <div class="controls">
-        <input
-          class="search"
-          placeholder="Search team (name or role)"
-          id="searchInput"
-          aria-label="Search team"
-        />
-      </div>
+    <div class="title">The Podsters</div>
+    <div class="nav"><a href="/Pages/Home/Home.html">Home</a></div>
+    <div class="nav"><a href="/Pages/Pricing/Pricing.html">Pricing</a></div>
+    <div class="nav"><a href="/Pages/Product_Features/Product_Features.html">Features</a></div>
+    <div class="nav"><a href="/Pages/Team/team.html">Team</a></div>
+</nav>
+
+
+    <header class="hero">
+        <h1>Meet The Podsters</h1>
+        <p>Five University of Ottawa Software Engineering students building human-centered health tech.</p>
+
+        <input 
+            id="searchInput" 
+            class="search-box" 
+            type="text" 
+            placeholder="Search by name or role..."
+        >
     </header>
 
-    <main>
-      <section class="grid" id="teamGrid">
-        <article class="card" data-name="Félix Séguin" data-role="Clinical Lead">
-          <div class="accent-arc"></div>
-          <div class="row">
+    <section class="team-section" id="teamGrid">
+        <article class="team-card" data-name="Félix Séguin" data-role="Clinical Lead">
             <div class="avatar">
-              <img
-                src="IMG_0651.JPG"
-                alt="Félix Séguin"
-                style="width:100%;height:100%;object-fit:cover"
-              />
+                <img src="IMG_0651.JPG" alt="Félix Séguin">
             </div>
-            <div style="flex:1">
-              <h3 class="name">Félix Séguin</h3>
-              <div class="role">Clinical Lead</div>
+            <h3>Félix Séguin</h3>
+            <p class="role">Clinical Lead</p>
+            <p class="bio">Tech guy.</p>
+
+            <div class="actions">
+                <button onclick="openProfile('Félix Séguin')">View Profile</button>
+                <button class="primary" onclick="contact('felix@schoolemail.com')">Contact</button>
             </div>
-          </div>
-          <p class="bio">
-            Tech guy.
-          </p>
-          <div class="actions">
-            <button class="btn" onclick="openModal(event,this)">View profile</button>
-            <button class="btn primary" onclick="contact('felix@schoolemail.com')">Contact</button>
-          </div>
         </article>
-        <article class="card" data-name="Elliot Okorie" data-role="Product Manager">
-          <div class="accent-arc"></div>
-          <div class="row">
+
+        <article class="team-card" data-name="Elliot Okorie" data-role="Product Manager">
             <div class="avatar">
-              <img
-                src="IMG_6983.JPG"
-                alt="Elliot Okorie"
-                style="width:100%;height:100%;object-fit:cover"
-              />
+                <img src="IMG_6983.JPG" alt="Elliot Okorie">
             </div>
-            <div style="flex:1">
-              <h3 class="name">Elliot Okorie</h3>
-              <div class="role">Product Manager</div>
+            <h3>Elliot Okorie</h3>
+            <p class="role">Product Manager</p>
+            <p class="bio">Builder & Vision-driven PM.</p>
+
+            <div class="actions">
+                <button onclick="openProfile('Elliot Okorie')">View Profile</button>
+                <button class="primary" onclick="contact('elliot@schoolemail.com')">Contact</button>
             </div>
-          <div class="actions">
-            <button class="btn" onclick="openModal(event,this)">View profile</button>
-            <button class="btn primary" onclick="contact('elliot@schoolemail.com')">Contact</button>
-          </div>
         </article>
-        <article class="card" data-name="Ethan Liu" data-role="Lead Engineer">
-          <div class="accent-arc"></div>
-          <div class="row">
+
+        <article class="team-card" data-name="Ethan Liu" data-role="Lead Engineer">
             <div class="avatar">
-              <img
-                src="20251008_230448.jpg"
-                alt="Ethan Liu"
-                style="width:100%;height:100%;object-fit:cover"
-              />
+                <img src="20251008_230448.jpg" alt="Ethan Liu">
             </div>
-            <div style="flex:1">
-              <h3 class="name">Ethan Liu</h3>
-              <div class="role">Lead Engineer</div>
+            <h3>Ethan Liu</h3>
+            <p class="role">Lead Engineer</p>
+            <p class="bio">Engineering specialist.</p>
+
+            <div class="actions">
+                <button onclick="openProfile('Ethan Liu')">View Profile</button>
+                <button class="primary" onclick="contact('ethan@schoolemail.com')">Contact</button>
             </div>
-          <div class="actions">
-            <button class="btn" onclick="openModal(event,this)">View profile</button>
-            <button class="btn primary" onclick="contact('ethan@schoolemail.com')">Contact</button>
-          </div>
         </article>
-        <article class="card" data-name="Rushi Patel" data-role="UX Designer">
-          <div class="accent-arc"></div>
-          <div class="row">
+
+        <article class="team-card" data-name="Rushi Patel" data-role="UX Designer">
             <div class="avatar">
-              <img
-                src="20251008_125959.jpg"
-                alt="Rushi Patel"
-                style="width:100%;height:100%;object-fit:cover"
-              />
+                <img src="20251008_125959.jpg" alt="Rushi Patel">
             </div>
-            <div style="flex:1">
-              <h3 class="name">Rushi Patel</h3>
-              <div class="role">UX Designer</div>
+            <h3>Rushi Patel</h3>
+            <p class="role">UX Designer</p>
+            <p class="bio">Human-centered design enthusiast.</p>
+
+            <div class="actions">
+                <button onclick="openProfile('Rushi Patel')">View Profile</button>
+                <button class="primary" onclick="contact('rushi@schoolemail.com')">Contact</button>
             </div>
-          </div>
-          <p class="bio">
-            Designer.
-          </p>
-  
-          <div class="actions">
-            <button class="btn" onclick="openModal(event,this)">View profile</button>
-            <button class="btn primary" onclick="contact('rushi@schoolemail.com')">Contact</button>
-          </div>
         </article>
-        <article class="card" data-name="Sohaan Mahadea" data-role="Data Scientist">
-          <div class="accent-arc"></div>
-          <div class="row">
+
+        <article class="team-card" data-name="Sohaan Mahadea" data-role="Data Scientist">
             <div class="avatar">
-              <img
-                src="Teams_Image_Sohaan.jpeg"
-                alt="Sohaan Mahadea"
-                style="width:100%;height:100%;object-fit:cover"
-              />
+                <img src="Teams_Image_Sohaan.jpeg" alt="Sohaan Mahadea">
             </div>
-            <div style="flex:1">
-              <h3 class="name">Sohaan Mahadea</h3>
-              <div class="role">Data Scientist</div>
+            <h3>Sohaan Mahadea</h3>
+            <p class="role">Data Scientist</p>
+            <p class="bio">Tech guy 2.</p>
+
+            <div class="actions">
+                <button onclick="openProfile('Sohaan Mahadea')">View Profile</button>
+                <button class="primary" onclick="contact('sohaan@schoolemail.com')">Contact</button>
             </div>
-          </div>
-          <p class="bio">
-            Tech guy 2.
-          </p>
-          <div class="actions">
-            <button class="btn" onclick="openModal(event,this)">View profile</button>
-            <button class="btn primary" onclick="contact('sohaan@schoolemail.com')">Contact</button>
-          </div>
         </article>
-      </section>
-    </main>
+
+    </section>
 
     <footer>
-      © <span id="year"></span> The Podsters — Built by first-year students.
+        © <span id="year"></span> The Podsters — Built by first-year students.
     </footer>
-  </div>
-  <img class="bird" id="bird1" src="bird_2.jpg" alt="colorful bird" />
-  <div id="modalBackdrop" class="modal-backdrop" role="dialog" aria-modal="true">
-    <div class="modal" role="document">
-      <div class="close" onclick="closeModal()">✕</div>
-      <div id="modalContent"></div>
-    </div>
-  </div>
+
+    <img id="bird1" class="bird" src="bird_2.jpg" alt="Colorful bird">
 </body>
 </html>
