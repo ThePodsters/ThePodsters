@@ -4,7 +4,7 @@ body {
    background: #22c772;
     background: linear-gradient(180deg,rgba(34, 199, 114, 1) 0%, rgba(76, 199, 129, 1) 25%, rgba(87, 199, 133, 1) 60%, rgba(255, 255, 255, 1) 100%);
     position: relative;
-    min-height: 100vh;
+    min-height: 130vh;
 }
 
 .header {
